@@ -1,0 +1,231 @@
+header{
+	text-align: center;
+}
+
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+
+h1{ 
+	font-family: 'Merriweather', serif;
+	font-size: 80px;
+	text-align: center;
+}
+
+h2{   
+	margin: 5px;
+}
+
+.personal{
+	text-align: center;
+}
+
+#figura{
+	display: inline-block;
+	width: 200px;
+	margin: 4px auto;
+}
+#figura img#educacion{
+	width: 190px;
+	margin: 10px 5px;
+}
+
+#foto{
+	width: 190px;
+	margin-right: 10px;
+}
+
+#periodo{
+	font-style: italic;
+}
+
+.bloque{ 
+	padding: 5px;    
+	margin: 10px auto 10px;
+	width: 60%;
+
+	border: 1pt solid #cbccc1;
+	border-radius: 15px;
+	background-color: #F5FFFA;
+}
+
+h2 + div[title="educacion"]{
+	border-bottom: 1px solid #cbccc1;
+}
+
+#section{
+	display: inline-block;
+	margin: 0 2px;
+	vertical-align: top;
+
+}
+
+
+
+li{  /* 7 */
+	display: inline-block;
+
+	margin: 10px 30px;
+	padding: 10pt 10pt 10pt 0pt;
+	border: 1px solid transparent;
+	border-radius: 50px;
+	background-color: #DCDCDC;
+	width: 130px;
+
+	text-align: left;
+
+	box-shadow: 7px 7px 8px #2F4F4F;
+}
+
+b#adquirida{ 
+	color: #ffffff;
+	margin: 0.8pt;
+	background-color: #4682B4;
+	border: 1px solid transparent;
+	border-radius: 100px;
+	text-align: left;
+	position: relative;
+	left: -15px;
+
+}
+
+.two_num{
+	padding: 10pt;
+}
+
+.num{
+	padding: 10pt 13pt;
+}
+
+b#adquirida:hover{
+	color: #FF6347;
+}
+
+@media only screen and (max-width:550px){
+	h2#nombre{
+		background-color: #ffffff;
+		opacity: 0.5;
+		font-size: 20px;
+		text-align: center;
+		position: relative;
+		bottom: -160px;
+		z-index: 1;     /* trae al frente */
+	}
+
+	h2{
+		text-align: center;
+	}
+
+	h3, #periodo{
+		text-align: center;
+		font-size: 1.4em;
+		margin: 1px;
+	}
+
+	.bloque{
+		width: 80% !important;
+		background-color: #d4e3fc!important;
+		border-radius: 10px;
+
+	}
+
+	.bloque > [title*="educacion"]{
+		width: 100%;
+	}
+
+	.personal{
+		display: none; 
+	}
+
+	#perido > p{
+		display: inline;
+	}
+	p{
+		display: inline!important;
+		margin: 4px;
+	}
+
+	#section, #figura{
+		display: block!important;  
+
+	}
+
+	[title*="educacion"] > #section{ 
+		width: 90%;
+		padding: 2px!important;
+		margin-left: 1px!important;
+		font-size: 0.6em;
+		text-align: justify;
+	}
+
+	div[title*="educacion"]{
+		width: 45%!important;
+		margin: 5px!important;
+		border-style: none!important;
+		display: inline-block;
+		vertical-align: top;
+		padding: 5px!important;
+	}
+
+	.espol,.Carlos_Julio{
+		margin: 4px 2px !important;
+		height: 150px;
+		width: auto!important;
+	}
+
+	img#educacion{
+		width: 100%!important;
+	}
+
+	/* caja de la foto*/
+	.foto{
+		margin: 4px 2px !important;
+		width: auto!important;
+	}
+
+	#foto{
+		margin: 10px 20%!important;
+		width: 60%!important;
+		height: 100%!important;
+	}
+
+	.primera{
+		height: 280px!important;
+		margin-top: 20px!important;
+	}
+
+	.principal{
+		text-align: center!important;
+	}
+	#carrera{
+		position: relative;
+		top: -100px;
+	}
+	p#ingenieria{
+		display: none;
+	}
+
+	li{
+		margin: 3%!important;
+	}
+
+	ul{
+		padding: 0;
+		margin: 0;
+	}
+
+	#habilidad::after{
+		content: ",";
+	}
+	#ultima::after{
+		content: ".";
+	}
+
+}
