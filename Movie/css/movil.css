@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+@media only screen and (max-width : 480px) {
+
+
+
+	body {
+		width: 100%;
+
+
+	}
+	div#trailer  {
+		display: none;
+
+	}
+	
+	div#descripcion{
+		display: none;
+	}
+	
+
+	div#movie {
+	 	position: relative;
+		display: inline-flex;
+		width: 220px;
+		flex-direction: column;
+		padding: 0px;
+		margin: 0px 10px 20px 0px;
+		
+	 }
+
+	 div#movie img {
+		width: 160px;
+		height: 100px;
+		margin-left: 10px;
+	}
+	 div h3{
+	 	display: none;
+	 }
+
+
+
+	 section div:first-child {
+		width: 480px !important;
+		border:none;
+		position: static;
+		border-bottom: 2px dotted !important;
+		height: 300px !important;
+	}
+
+	div:first-child div#reparto {
+		display: none;
+	}
+
+	div:first-child h2 {
+		order:1;
+		padding-top: 0px;
+		margin-top: 0px;
+		display: inline-block;
+	}
+
+	div:first-child hr {
+		display: none;
+	}
+
+	div:first-child div#imagen{
+		display: inline;
+		width: 200px !important ; 
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		margin-top: 40px;
+		margin-left: 30px;
+		order:2;
+	}
+
+	div:first-child div#descripcion {
+		position: static;
+		display: inline;
+		width: 50%;
+		float: right; 
+		font-size: 60%;
+		float: right;
+		order:3;
+	}
+
+	
+
+	
+
+	div#reparto{
+		display: inline;
+		position: static;
+		width: 100%;
+		order:2;
+
+	}
+	div#reparto h3{
+		display: inline;
+		padding: 0px;
+		margin:0px;
+		font-size: 90%;
+	}
+
+
+	
+
+	ul{
+		margin:0px;
+		padding: 0px;
+		display: inline;
+		float: right;
+	}
+	ul li::after{
+		content: ",";
+	}
+
+
+	ul li{
+		display: inline;
+		font-size: 10px;
+		list-style: none;
+		order:2;
+		
+	}
+
+	
+
+	
+
+}
